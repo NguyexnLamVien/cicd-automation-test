@@ -1,0 +1,45 @@
+{
+  "products": [
+    "MP-WP02",
+    "MP-WP06h30v",
+    "OL-LSP01",
+    "MP-WP24h",
+    "DHG-D15ML",
+    "OL-2501",
+    "DHG-A400S",
+    "HP-33WE21",
+    "MP-WP18",
+    "MP-WP35",
+    "MP-WP34",
+    "MP-WP33",
+    "PW-001",
+    "MT-001",
+    "MK-EM01",
+    "MT-002",
+    "OL-24KN",
+    "AT-WP15",
+    "AT-WP18",
+    "MP-WP24h",
+    "MP-WP20",
+    "MP-WP16o",
+    "MP-WP16h",
+    "MP-WP15",
+    "MP-WP09",
+    "MP-WP08",
+    "DHG-H150",
+    "OL-2502",
+    "MP-WP11",
+    "DHG-M500",
+    "GD4"
+  ],
+  "users": [
+    {
+      "username": "0995763493",
+      "password": "234234"
+    },
+    {
+      "username": "0847395867",
+      "password": "234234"
+    }
+  ]
+}

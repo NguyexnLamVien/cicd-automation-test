@@ -1,0 +1,17 @@
+stages:
+  - test
+
+test_e2e:
+  stage: test
+  image: node:18 # Sử dụng Docker image Node.js
+  before_script:
+    - apt-get update && apt-get install -y chromium # Cài đặt trình duyệt Chromium
+    - npm install # Cài đặt các package cần thiết
+  script:
+    - npm run wdio # Chạy test
+  artifacts:
+    paths:
+      - reports # Lưu báo cáo (nếu bạn cấu hình tạo báo cáo trong dự án)
+
+  only:
+    - main # Chạy pipeline khi đẩy code lên nhánh main

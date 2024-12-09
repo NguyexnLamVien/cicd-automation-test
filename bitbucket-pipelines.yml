@@ -1,0 +1,23 @@
+image: node:18.18.0
+
+pipelines:
+  default:
+    - step:
+        name: Run Selenium Tests
+        caches:
+          - node
+        artifacts:
+          - reports/**
+        script:
+          - npm install
+          # - npm install selenium-webdriver
+          - export ENV=dev && npm run wdio
+        services:
+          - chrome
+
+definitions:
+  services:
+    chrome:
+      image: selenium/standalone-chrome:124.0-chromedriver-124.0-20240505
+      ports:
+        - "4444:4444"
